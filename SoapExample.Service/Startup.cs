@@ -25,7 +25,6 @@ namespace SoapExample.Service
         {
             app.UseDeveloperExceptionPage();
             app.UseSoapEndpoint<IMessageService>("/MessageService.svc", new BasicHttpBinding(), SoapSerializer.DataContractSerializer);
-            app.UseMvc();
         }
     }
 }
